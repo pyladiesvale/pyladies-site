@@ -21,5 +21,5 @@ from pyladies.core.views import home
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', home), 
+    url(r'^$', home, name="home"), 
 ]

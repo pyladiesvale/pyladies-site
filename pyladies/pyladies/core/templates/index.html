@@ -1,1 +1,798 @@
-PyLadies Vale
+{% load staticfiles %}
+
+<!doctype html>
+<!--[if lt IE 7]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+  <head>
+    <meta charset="UTF-8">
+    <title>PyLadies Vale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static "core/favicon.ico" %}" />
+
+    <!--link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /-->
+
+    <!--
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    -->
+
+    <!--
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="css/berry.css">
+    <link rel="stylesheet" href="css/modal.css"/>
+
+    <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
+    -->
+
+    <link rel="stylesheet" href="{% static "core/css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "core/css/animate.css" %}">
+    <link rel="stylesheet" href="{% static "core/css/font-awesome.min.css" %}">
+    <link rel="stylesheet" href="{% static "core/css/slick.css" %}">
+    <link rel="stylesheet" href="{% static "core/js/rs-plugin/css/settings.css" %}">
+    <link rel="stylesheet" href="{% static "core/css/berry.css" %}">
+    <link rel="stylesheet" href="{% static "core/css/modal.css" %}"/>
+
+    <script type="text/javascript" src="{% static "core/js/modernizr.custom.32033.js" %}"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="pre-loader">
+      <div class="load-con"> 
+      
+        <!--img src="static/core/img/logos/logopyladies59x60.png" class="animated fadeInDown" alt=""-->
+        <img src="{% static "core/img/logos/pyladies/logopyladies59x60.png" %}" class="animated fadeInDown" alt="">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="fa fa-bars fa-lg"></span>
+            </button>
+            <!--a class="navbar-brand" href="index.html"-->
+            <!--a class="navbar-brand" href="{|% url 'home' %|}"-->
+            <a class="navbar-brand" href="#">
+
+              <img src="{% static "core/img/logos/pyladies/logopyladies59x60.png" %}" alt="" class="logo">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">PyLadies</a></li>
+              <li><a href="#valeparaiba">Vale do Paraíba</a></li>
+              <li><a href="#pyladiesvale">PyLadies Vale</a></li>
+              <li><a href="#members">Membros</a></li>
+              <li><a href="#events">Eventos</a></li>
+              <li><a href="#support">Contato</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-->
+      </nav>
+      <!--RevSlider-->
+      <div class="tp-banner-container">
+        <div class="tp-banner">
+          
+          <ul>
+              <!-- SLIDE (image in left) -->
+              <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                <!-- MAIN IMAGE -->
+                <!--img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"-->
+                <img src="{% static "core/img/transparent.png" %}"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                <!-- LAYERS -->
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption lfl fadeout hidden-xs" data-x="left"
+                data-y="bottom"
+                data-hoffset="30"
+                data-voffset="0"
+                data-speed="500"
+                data-start="700"
+                data-easing="Power4.easeOut">
+                <!--img src="img/berry/Slides/python2.png" alt=""-->
+                <img src="{% static "core/img/berry/Slides/python2.png" %}" alt="">
+              </div>
+
+              <div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
+                Python
+              </div>
+              <!--
+              <div class="tp-caption large_white_light sfr" data-x="770" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1400" data-easing="Power4.easeOut">
+                Por quê?
+              </div>
+              -->
+
+              <div class="tp-caption medium_light_white sfb sfb visible-xs" data-x="center" data-y="center" data-hoffset="0" data-voffset="80" data-speed="1000" data-start="1600" data-easing="Power4.easeOut">
+                <p>"Python é uma ..</p> 
+              </div>
+
+              <div class="tp-caption small_light_white sfb hidden-xs" data-x="550" data-y="center" data-hoffset="0" data-voffset="80" data-speed="1000" data-start="1600" data-easing="Power4.easeOut">
+                <p>"Python é uma ..</p> 
+              </div>
+
+              <div class="tp-caption sfb hidden-xs" data-x="550" data-y="center" data-hoffset="0" data-voffset="160" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+                <a href="http://wiki.python.org.br/AprendaProgramar" class="btn btn-primary inverse btn-lg">Saiba mais</a>
+              </div>
+            </li>
+
+            <!-- SLIDE 2 (image in center) -->
+            <!--
+            <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+              <!- - MAIN IMAGE - ->
+              <img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+              <!- - LAYERS - ->
+              <!- - LAYER NR. 1 - ->
+              <div class="tp-caption lfb fadeout hidden-xs"
+              data-x="center"
+              data-y="bottom"
+              data-hoffset="0"
+              data-voffset="0"
+              data-speed="1000"
+              data-start="700"
+              data-easing="Power4.easeOut">
+              <img src="img/berry/Slides/geek.png"alt=""/>
+            </div>
+
+
+            <div class="tp-caption large_white_light sft" data-x="center" data-y="250" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+              Seja um líder!
+            </div>
+            <div class="tp-caption medium_light_white sfb" data-x="center" data-y="350" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                <p>Junte-se a nós.</p> 
+              </div>
+          </li>
+          -->
+
+
+          <!-- SLIDE 3 (image in right) -->
+          <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+            <!-- MAIN IMAGE -->
+            <!--img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"-->
+            <img src="{% static "core/img/transparent.png" %}"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+            <!-- LAYERS -->
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption customin customout hidden-xs" data-x="right"
+            data-y="center" data-hoffset="0"
+            data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+            data-voffset="50" data-speed="1000" data-start="700"
+            data-easing="Power4.easeOut">
+            <!--img src="img/logos/logodjango.png" alt=""-->
+            <img src="{% static "core/img/logos/logodjango.png" %}" alt="">
+          </div>
+
+          <!-- visible é o q vai aparecer no mobile-->
+          <div class="tp-caption large_white_light sft visible-xs" data-x="center" data-y="center" data-hoffset="0" data-voffset="-170" data-speed="1000" data-start="1000" data-easing="Power4.easeOut">
+            Django
+          </div>
+          <div class="tp-caption mediumlarge_light_white sfl visible-xs" data-x="center" data-y="center" data-hoffset="0" data-voffset="-50" data-speed="1000" data-start="1000" data-easing="Power4.easeOut">
+            Todos os ...
+          </div>
+          <div class="tp-caption lfb visible-xs" data-x="center" data-y="center" data-hoffset="0" data-voffset="160" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">
+            <a href="https://www.facebook.com/PyLadiesSaoCarlos" class="btn btn-primary inverse btn-lg">Saiba mais</a>
+          </div>
+
+
+          <div class="tp-caption mediumlarge_light_white sfl hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="-50" data-speed="1000" data-start="1000" data-easing="Power4.easeOut">
+            Django
+          </div>
+          <div class="tp-caption small_light_white sfb hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="80" data-speed="1000" data-start="1600" data-easing="Power4.easeOut">
+           <p> Todos os ...
+           </div>
+           <div class="tp-caption lfl hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="160" data-speed="1000" data-start="1800" data-easing="Power4.easeOut">
+            <a href="https://www.facebook.com/PyLadiesSaoCarlos" class="btn btn-primary inverse btn-lg">Saiba mais</a>            
+          </div>
+        </li>
+
+            </ul>
+        
+        </div>
+      </div>
+
+      <!-- Modal Example -->
+      <!--
+      <div class="modal fade" id="about-ana" tabindex="-1" role="dialog" aria-labelledby="sendMessagelLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <img class="pyladies img img-responsive" src="img/berry/logo.png" alt=""/>
+                      <!- -<p class="pyladies text-center">PyLadies</p><p class="sanca text-center">São Carlos</p>- ->
+                      <!- -<h4 class="modal-title" id="sendMessagelLabel">Modal Teste</h4>- ->
+                  </div>
+                  <div class="modal-body">
+                      <img id="img" class="img img-responsive img-rounded" src="http://placehold.it/80x80" alt="Responsive imagem"/>
+                      <h2 class="name">Ana Dulce</h2>
+                      <div class="about-members">
+                          <h4><i class="fa fa-graduation-cap"></i> Cursando Bacharelado em Ciência da Computação</h4>
+                          <ul class="info list-unstyled ">
+                              <li class="universidade"><i class="fa fa-university"></i><a href="#"> Universidade Federal de São Carlos - (UFSCar)</a></li>
+                          </ul>
+
+
+
+                          <ul class="info list-unstyled">
+                              <li><i class="fa fa-envelope-o"></i><a href="#"> anadulce@email.com</a></li>
+                              <li><i class="fa fa-link"></i><a href="#"> anadulce.com</a></li>
+                              <li><i class="fa fa-flask"></i><a href="#"> Curriculum Lattes</a></li>
+                          </ul>
+                      </div><!- -//about- ->
+
+                      <div class="information">
+                          <h4><i class="fa fa-info-circle"></i> Informações Adicionais</h4>
+                          <span>Mussum ipsum cacilds, vidis litro abertis. <br/>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </span>
+                      </div><!- -//information- ->
+
+                      <div class="social-midia">
+                          <ul class="list-inline">
+                              <h4 class="list-group-item-heading">Social mídia</h4>
+                              <li><a href="#"><span class="sr-only">Facebook</span><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                              <li><a href="#"><span class="sr-only">Google+</span><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+                              <li><a href="#"><span class="sr-only">Twitter</span><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                              <li><a href="#"><span class="sr-only">Linkedin</span><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                              <li><a href="#"><span class="sr-only">Github</span><i class="fa fa-github-square fa-2x"></i></a></li>
+                          </ul>
+                      </div><!- -//social- ->
+                  </div><!- -//modal-body- ->
+
+                  <div class="modal-footer">
+                      <div class="text-left">
+                          <h6>Citação Favorita</h6>
+                          <blockoute>
+                              <i class="fa fa-quote-left"><span class="sr-only">Citação Favorita</span> frase de um grande pensador <i class="fa fa-quote-right"></i></i>
+                          </blockoute>
+                          <sup class="text-left">fulano de tal</sup>
+                      </div>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Fechar</button>
+                  </div><!- -//footer- ->
+              </div><!- -//modal-content- ->
+          </div><!- -//modal-dialog- ->
+      </div><!- -//modal- ->
+      -->
+
+    </header>
+
+    <div class="wrapper">
+
+      <section id="about">
+        <div class="container">
+
+          <div class="section-heading scrollpoint sp-effect3">
+            <h1>PyLadies</h1>
+            <div class="divider"></div>
+            <p>
+              O PyLadies é um....
+            </p>
+          </div>
+
+          <!--
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-6">
+              <div class="about-item scrollpoint sp-effect2">
+                <i class="fa fa-users fa-2x"></i>
+                <h3>Origem</h3>
+                <p>O primeiro grupo foi criado nos Estados Unidos visando motivar mais mulheres a se interessarem por computação, utilizando como base a linguagem python.</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6" >
+              <div class="about-item scrollpoint sp-effect5">
+                <i class="fa fa-space-shuttle fa-2x"></i>
+                <h3>Missão</h3>
+                <p>Nossa missão é promover, educar e impulsionar a existência de uma comunidade Python diversificada através de sensibilização, educação, conferências, eventos e encontros sociais.</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6" >
+              <div class="about-item scrollpoint sp-effect5">
+                <i class="fa fa-thumbs-up fa-2x"></i>
+                <h3>Todos são bem vindos!</h3>
+                <p>Nosso ideal não é segregar, mas sermos um meio de integrar as mulheres à programação.</p>
+              </div>
+            </div>
+          </div>
+          -->
+
+        </div>
+      </section>
+
+      <section id="valeparaiba">
+        <div class="container">
+          <div class="section-heading scrollpoint sp-effect3">
+            <h1>Vale do Paraíba</h1>
+            <div class="divider"></div>
+            <p>
+              O Vale do Paraíba...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pyladiesvale">
+        <div class="container">
+          <div class="section-heading scrollpoint sp-effect3">
+            <h1>PyLadies Vale</h1>
+            <div class="divider"></div>
+            <p>
+              O Pyl....
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="members">
+        <div class="container">
+
+          <div class="section-heading scrollpoint sp-effect3">
+            <h1>Membros</h1>
+            <div class="divider"></div>
+            <p>
+              Os membros 
+            </p>
+          </div>
+
+            <div class="row">
+              <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
+
+                <div class="media media-left feature">
+                  <a class="pull-right" href="#" data-toggle="modal" data-target="#about-ana">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Ana Dulce</h3>
+                    Estudante CComputação UFSCar
+                      <p><a class="more-info" href="#" data-toggle="modal" data-target="#about-ana">Sobre mim</a></p>
+                  </div>
+                </div>
+
+                <div class="media media-left feature">
+                  <a class="pull-right" href="test.html" data-toggle="modal" data-target="#about-barbara">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Bárbara</h3>
+                    Estudante EComputação UFSCar
+                  </div>
+                </div>
+                <div class="media media-left feature">
+                  <a class="pull-right" href="#">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Bia Lima</h3>
+                    Estudante CComputação UFSCar
+                  </div>
+                </div>
+                <div class="media media-left feature">
+                  <a class="pull-right" href="#">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Bruna</h3>
+                    Estudante CComputação UFSCar
+                  </div>
+                </div>
+                <div class="media media-left feature">
+                  <a class="pull-right" href="#">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Camila</h3>
+                    Estudante CComputação UFSCar
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-4 col-sm-4" >
+                <img src="{% static "core/img/berry/3geek.png" %}" class="img-responsive scrollpoint sp-effect5" alt="">
+              </div>
+
+              <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
+
+                <div class="media media">
+                  <a class="pull-left" href="#">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Jéssica Caroline</h3>
+                    Estudante CComputação UFSCar
+                  </div>
+                </div>
+                <div class="media feature">
+                  <a class="pull-left" href="#">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Jéssica Antunes</h3>
+                    Estudante CComputação UFSCar
+                  </div>
+                </div>
+                <div class="media feature">
+                  <a class="pull-left" href="#">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Letícia Rostirola</h3>
+                    Bacharel CComputação USP
+                  </div>
+                </div>
+                <div class="media feature">
+                  <a class="pull-left" href="#">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Letícia Yumi</h3>
+                    Estudante CComputação UFSCar
+                  </div>
+                </div>
+                <div class="media feature">
+                  <a class="pull-left" href="#">
+                    <img src="{% static "core/img/berry/members/ana.png" %}"alt=""/>
+                  </a>
+                  <div class="media-body">
+                    <h3 class="media-heading">Lucas</h3>
+                    Estudante CComputação UFSCar
+                  </div>
+                </div>               
+
+              </div>
+
+            </div> <!-- class="row" -->
+          </div> <!-- class="container" -->
+        </section>
+
+    <!--
+        <section id="reviews">
+          <div class="container">
+            <div class="section-heading inverse scrollpoint sp-effect3">
+              <h1>Reviews</h1>
+              <div class="divider"></div>
+              <p>O que falam sobre a gente?</p>
+            </div>
+            <div class="row">
+              <div class="col-md-10 col-md-push-1 scrollpoint sp-effect3">
+                <div class="review-filtering">
+                  <div class="review">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="review-person">
+                          <img src="http://api.randomuser.me/portraits/women/94.jpg" alt="" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="review-comment">
+                          <h3>“"Caras, estou muito orgulhosa dessa iniciativa no DC-UFSCar.”</h3>
+                          <p>
+                            - Prof.: Junia Anacleto
+                            <span>
+                              <i class="fa fa-star fa-lg"></i>
+                              <i class="fa fa-star fa-lg"></i>
+                              <i class="fa fa-star fa-lg"></i>
+                              <i class="fa fa-star fa-lg"></i>
+                              <i class="fa fa-star-o fa-lg"></i>
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review rollitin">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="review-person">
+                          <img src="http://api.randomuser.me/portraits/men/70.jpg" alt="" class="img-responsive">
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="review-comment">
+                          <h3>“Olá Garotas - ladies é p/ quem tem mais de 40 anos :-) Legal a iniciativa, torço p/ que vocês tenham bons resultados! Boa Sorte!"</h3>
+                          <p>
+                            - Prof.: Marcio
+                            <span>
+                              <i class="fa fa-star fa-lg"></i>
+                              <i class="fa fa-star fa-lg"></i>
+                              <i class="fa fa-star fa-lg"></i>
+                              <i class="fa fa-star-half-o fa-lg"></i>
+                              <i class="fa fa-star-o fa-lg"></i>
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                        </div>
+                        <div class="review rollitin">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="review-person">
+                                        <img src="http://api.randomuser.me/portraits/men/93.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="review-comment">
+                                        <h3>“Keep It Up Guys Your Work Rules, Cheers :)”</h3>
+                                        <p>
+                                            - Ricky Grant
+                                            <span>
+                                                <i class="fa fa-star fa-lg"></i>
+                                                <i class="fa fa-star fa-lg"></i>
+                                                <i class="fa fa-star fa-lg"></i>
+                                                <i class="fa fa-star-half-o fa-lg"></i>
+                                                <i class="fa fa-star-o fa-lg"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section> -->
+
+<!--
+        <section id="screens">
+          <div class="container">
+
+            <div class="section-heading scrollpoint sp-effect3">
+              <h1>Nossos projetos e eventos!</h1>
+              <div class="divider"></div>
+              <p>Em construção...</p>
+            </div>
+
+            <div class="filter scrollpoint sp-effect3">
+              <a href="javascript:void(0)" class="button js-filter-one">PyLadies nas Escolas</a>
+              <a href="javascript:void(0)" class="button js-filter-two">Minicursos</a>
+              <a href="javascript:void(0)" class="button js-filter-three">Eventos</a>
+              <a href="javascript:void(0)" class="button js-filter-four">Meetups</a>
+            </div> 
+            <!- -
+            <div class="slider filtering scrollpoint sp-effect5" >
+                <div class="one">
+                    <p>O objetivo é incentivar menians do ensino médio a ingressarem na área de exatas, principalmente em computação, motivando usando python.</p>
+                    <h4>Foto</h4>
+                </div>
+                <div class="two">
+                    <p>Minicursos serão dados ao longo do ano. Python, Git e Linux.</p>
+                    <h4>Foto</h4>
+                </div>
+                <div class="three">
+                    <p>Realizaremos o Primeiro encontro de python e tecnologias em São Carlos, junto com o grupo pySanca e X Y Z. Uhull</p>
+                    <h4>Foto</h4>
+                </div>
+                <div class="four">
+                    <p>Quinzenalmente realizamos meetups do grupo em bares e cafés da região. Todos estão convidados a participar.</p>
+                    <h4>Foto</h4>
+                </div>
+              </div>- ->
+          </div>
+        </section>
+        -->
+
+        <!--
+        <section id="projects">
+          <div class="container">
+
+            <div class="section-heading scrollpoint sp-effect3">
+              <h1>Projetos</h1>
+              <div class="divider"></div>
+              <p>Em construção...</p>
+            </div>
+
+            <div class="filter scrollpoint sp-effect3">
+              <a href="javascript:void(0)" class="button js-filter-one">PyLadies nas Escolas</a>
+              <a href="javascript:void(0)" class="button js-filter-two">Minicursos</a>
+              <a href="javascript:void(0)" class="button js-filter-three">Eventos</a>
+              <a href="javascript:void(0)" class="button js-filter-four">Meetups</a>
+            </div>
+          </div>
+        </section>
+        -->
+
+        <!--
+              <section id="partners">
+                <div class="container-fluid">
+
+                  <div class="section-heading inverse scrollpoint sp-effect3">
+                    <h1>Apoiadores e Patrocinadores</h1>
+                    <div class="divider"></div>
+                    <p>Empresas que acreditam no nosso grupo.</p>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="hanging-phone scrollpoint sp-effect2 hidden-xs">
+                        <img src="img/berry/ufscar.png" class="img-responsive scrollpoint sp-effect5" data-x="300" data-y="center" alt="">
+                      </div>
+                      <div class="platforms">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+        -->
+
+        <section id="events">
+          <div class="container">
+
+            <div class="section-heading scrollpoint sp-effect3">
+              <h1>Eventos</h1>
+              <div class="divider"></div>
+              <p>Em construção...</p>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="support" class="doublediagonal">
+          <div class="container">
+            <div class="section-heading scrollpoint sp-effect3">
+              <h1>Contato</h1>
+              <div class="divider"></div>
+              <p>Caso tenha alguma dúvida, não hesite em nos contactar. :)</p>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
+                    <p>
+                      São Carquifonologia de ponta.
+                    </p>
+                    <p>
+                      Dianttantação.
+                    </p>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 contact-details scrollpoint sp-effect2">
+                    
+                    <div class="media">
+                      <a class="pull-left" href="https://www.google.com.br/maps/place/S%C3%A3o+Jos%C3%A9+dos+Campos,+SP/@-23.1894443,-46.0030986,11z/data=!3m1!4b1!4m2!3m1!1s0x94cc4bb3858cc2e7:0xba25a33168f8c1" >
+                        <i class="fa fa-map-marker fa-2x"></i>
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">Vale do Paraíba - SP - Brasil</h4>
+                      </div>
+                    </div>
+
+                    <div class="media">
+                      <a class="pull-left" >
+                        <i class="fa fa-envelope fa-2x"></i>
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          <a href="mailto:vale@pyladies.com">vale@pyladies.com</a>
+                        </h4>
+                      </div>
+                    </div>
+
+                    <div class="media">
+                      <a class="pull-left" href="https://github.com/pyladiesvale" >
+                        <i class="fa fa-github fa-2x"></i>
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">pyladiesvale</h4>
+                      </div>
+                    </div>
+
+                    <div class="media">
+                      <a class="pull-left" href="https://twitter.com/pyladiesvale" >
+                        <i class="fa fa-twitter fa-2x"></i>
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">@pyladiesvale</h4>
+                      </div>
+                    </div>
+
+                    <div class="media">
+                      <a class="pull-left" href="https://www.facebook.com/pyladiesvale" >
+                        <i class="fa fa-facebook fa-2x"></i>
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">fb.me/pyladiesvale</h4>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="container">
+            <a href="#" class="scrollpoint sp-effect3">
+              <!--img src="img/berry/logopyladies59x60.png" alt="" class="logo"-->
+              <img src="{% static "core/img/logos/pyladies/logopyladies59x60.png" %}" alt="" class="logo">
+            </a>
+            <!--
+            <div class="social">
+              <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
+              <!- -<a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>- ->
+              <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+              <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
+            </div>
+            -->
+
+            <div class="rights">
+              <p>Copyright &copy; 2016</p>
+              <p>Todos os direitos reservados</a></p>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+    <!--
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/placeholdem.min.js"></script>
+    <script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    -->
+
+    <script src="{% static "core/js/jquery-1.11.1.min.js" %}"></script>
+    <script src="{% static "core/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "core/js/slick.min.js" %}"></script>
+    <script src="{% static "core/js/placeholdem.min.js" %}"></script>
+    <script src="{% static "core/js/rs-plugin/js/jquery.themepunch.plugins.min.js" %}"></script>
+    <script src="{% static "core/js/rs-plugin/js/jquery.themepunch.revolution.min.js" %}"></script>
+    <script src="{% static "core/js/waypoints.min.js" %}"></script>
+    <script src="{% static "core/js/scripts.js" %}"></script>
+    <script type="text/javascript" src="{% static "core/js/custom.js" %}"></script>
+
+    <script>
+      $(document).ready(function() {
+        appMaster.preLoader();
+      });
+    </script>
+
+  </body>
+</html>
