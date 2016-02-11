@@ -1,3 +1,52 @@
 .media, .media .media {
     margin-top: 15px !important;
 }
+
+
+
+/* id_color section */
+section#id_color {
+  padding-bottom: 0px;
+}
+section#id_color .media {
+  margin-bottom: 10px;
+}
+section#id_color .media i.fa {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 1.9em;
+  text-align: center;
+}
+section#id_color .media .media-heading {
+  padding-top: 15px;
+  font-weight: 300;
+}
+section#id_color .media .media-heading a {
+  font-weight: 400;
+}
+section#id_color header h1:after {
+  background: #db0b0b;
+}
+section#id_color .media i.fa {
+  border: 2px solid #db0b0b;
+  color: #db0b0b;
+}
+section#id_color .media a {
+  color: #db0b0b;
+}
+section#id_color .media:hover i.fa {
+  color: #ffffff;
+  background: #db0b0b;
+}
+section#id_color .media:hover h3 {
+  color: #db0b0b;
+}
