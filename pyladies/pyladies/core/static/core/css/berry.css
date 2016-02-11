@@ -168,8 +168,10 @@ header .navbar-default.scrolled ul.navbar-nav {
 .section-heading .divider:after {
   content: "";
   position: relative;
-  height: 4px;
-  width: 60px;
+  /*height: 4px;
+  width: 60px;*/
+  height: 2px;
+  width: 100%;
   display: block;
   text-align: center;
   margin: 13px auto;
@@ -775,7 +777,7 @@ header .navbar-default.scrolled .navbar-brand {
   background: #4a0808;
 }
 section .section-heading .divider:after {
-  background: #db0b0b;
+  background: #c0c0c0;
 }
 section#about .about-item i.fa {
   border: 2px solid #db0b0b;
