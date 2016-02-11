@@ -375,290 +375,50 @@
             </p>
           </div>
 
-          <div class="row">
-            <div class="col-xs-1 col-sm-1 col-md-1 media scrollpoint sp-effect1"></div>
+          {% if MEMBERS %}
+            {% for list_members in MEMBERS %}  
+              <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 media scrollpoint sp-effect1"></div>
 
-            <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
+                  {% for member in list_members %}
+                    <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
+                      <center>
+                        <div>
+                          <img src="{% static member.foto %}" alt="" class="img-responsive img-circle" alt="Responsive image">
+                        </div>
+                      </center>
+                      <div class="feature">
+                        <center>
+                          <h3 class="media-heading"> {{ member.nome }} </h3>
+                          <p> {{ member.status }} </p>
+                        </center> 
+                        <section id="id_color" class="doublediagonal">
+                          <div class="row">                            
+                            <div class="media col-xs-4 col-sm-4 col-md-4">
+                              <a href="{{ member.socialnetworks.facebook }}" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+                            </div>  
+                            <div class="media col-xs-4 col-sm-4 col-md-4">
+                              <a href="{{ member.socialnetworks.github }}" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
+                            </div>  
+                            <div class="media col-xs-4 col-sm-4 col-md-4">
+                              <a href="{{ member.socialnetworks.twitter }}" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
+                            </div>                         
+                          </div>
+                        </section>                 
+                      </div>
+                    </div>
+                  {% endfor %}
+
+                <div class="col-xs-2 col-sm-2 col-md-2 media scrollpoint sp-effect1"></div>
               </div>
-            </div>
 
-             <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
-              </div>
-            </div>
+            {% endfor %}
 
-             <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
-              </div>
-            </div>
+          {% else %}
+          
+            Sem membros...
 
-             <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
-              </div>
-            </div>
-
-             <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
-              </div>
-            </div>
-
-            <div class="col-xs-1 col-sm-1 col-md-1 media scrollpoint sp-effect1"></div>
-
-          </div>
-
-
-         <div class="row">
-            <div class="col-xs-1 col-sm-1 col-md-1 media scrollpoint sp-effect1"></div>
-
-            <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
-              </div>
-            </div>
-
-             <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
-              </div>
-            </div>
-
-             <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
-              </div>
-            </div>
-
-             <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
-              </div>
-            </div>
-
-             <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
-              <center>
-                <div>
-                  <img src="{% static "core/img/members/nobody.png" %}" alt="" class="img-responsive img-circle" alt="Responsive image">
-                </div>
-              </center>
-              <div class="feature">
-                <center>
-                  <h3 class="media-heading">Someone</h3>
-                  <p>Estudante</p>
-                </center> 
-                <section id="id_color" class="doublediagonal">
-                  <div class="row">
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://twitter.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://www.facebook.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                    </div>  
-                    <div class="media col-xs-4 col-sm-4 col-md-4">
-                      <a href="https://github.com/pyladiesvale" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                    </div>                         
-                  </div>
-                </section>                 
-              </div>
-            </div>
-
-            <div class="col-xs-1 col-sm-1 col-md-1 media scrollpoint sp-effect1"></div>
-
-          </div>
+          {% endif %}
 
         </div> <!-- class="container" -->
       </section>
