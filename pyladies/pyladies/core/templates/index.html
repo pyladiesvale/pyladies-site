@@ -263,10 +263,11 @@
           {% if MEMBERS %}
             {% for list_members in MEMBERS %}  
               <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 media scrollpoint sp-effect1"></div>
+                <!--div class="col-xs-2 col-sm-2 col-md-2 media scrollpoint sp-effect1"></div-->
+                <div class="col-md-2 media scrollpoint sp-effect1"></div>
 
                   {% for member in list_members %}
-                    <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect1" id="member0">
+                    <div class="col-xs-12 col-sm-3 col-md-2 media scrollpoint sp-effect1" id="member0">
                       <center>
                         <div>
                           <img src="{% static member.foto %}" alt="" class="img-responsive img-circle" alt="Responsive image">
@@ -279,22 +280,25 @@
                         </center> 
                         <section id="id_color" class="doublediagonal">
                           <div class="row">                            
-                            <div class="media col-xs-4 col-sm-4 col-md-4">
-                              <a href="{{ member.socialnetworks.facebook }}" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                            </div>  
-                            <div class="media col-xs-4 col-sm-4 col-md-4">
-                              <a href="{{ member.socialnetworks.github }}" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
-                            </div>  
-                            <div class="media col-xs-4 col-sm-4 col-md-4">
-                              <a href="{{ member.socialnetworks.twitter }}" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                            </div>                         
+                            <center>
+                              <div class="media col-xs-4 col-sm-4 col-md-4">
+                                <a href="{{ member.socialnetworks.facebook }}" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+                              </div>  
+                              <div class="media col-xs-4 col-sm-4 col-md-4">
+                                <a href="{{ member.socialnetworks.github }}" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
+                              </div>  
+                              <div class="media col-xs-4 col-sm-4 col-md-4">
+                                <a href="{{ member.socialnetworks.twitter }}" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
+                              </div>    
+                            </center>                     
                           </div>
                         </section>                 
                       </div>
                     </div>
                   {% endfor %}
 
-                <div class="col-xs-2 col-sm-2 col-md-2 media scrollpoint sp-effect1"></div>
+                <!--div class="col-xs-2 col-sm-2 col-md-2 media scrollpoint sp-effect1"></div-->
+                <div class="col-md-2 media scrollpoint sp-effect1"></div>
               </div>
 
             {% endfor %}
