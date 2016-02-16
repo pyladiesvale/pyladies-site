@@ -1,1 +1,1 @@
-web: gunicorn pyladies.wsgi --log-file -
+web: gunicorn --pythonpath pyladies pyladies.wsgi

@@ -142,6 +142,13 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
+# print(">>>>1"+PROJECT_ROOT)
+# print(">>>>2"+STATIC_ROOT)
+# print(">>>>3"+BASE_DIR)
+
+# >>>>1/docs/projs/pyladies/pyladies-site/pyladies/pyladies
+# >>>>2/docs/projs/pyladies/pyladies-site/pyladies/pyladies/staticfiles
+# >>>>3/docs/projs/pyladies/pyladies-site/pyladies
 
 
 
