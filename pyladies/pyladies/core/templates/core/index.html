@@ -10,7 +10,9 @@
 
   <head>
     <meta charset="UTF-8">
+    
     <title>PyLadies Vale</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="shortcut icon" type="image/x-icon" href="{% static "core/favicon.ico" %}" />
@@ -273,8 +275,7 @@
 
           {% if MEMBERS %}
             {% for list_members in MEMBERS %}  
-              <div class="row">
-                <!--div class="col-xs-2 col-sm-2 col-md-2 media scrollpoint sp-effect1"></div-->
+              <div class="row">                
                 <div class="col-md-2 media scrollpoint sp-effect3"></div>
 
                   {% for member in list_members %}
@@ -310,7 +311,6 @@
                     </div>
                   {% endfor %}
 
-                <!--div class="col-xs-2 col-sm-2 col-md-2 media scrollpoint sp-effect1"></div-->
                 <div class="col-md-2 media scrollpoint sp-effect3"></div>
               </div>
 
@@ -327,13 +327,11 @@
 
       <section id="events">
         <div class="container">
-
           <div class="section-heading scrollpoint sp-effect3">
             <h1>Eventos</h1>
             <div class="divider"></div>
             <p>Em construção...</p>
           </div>
-
         </div>
       </section>
 
@@ -345,153 +343,34 @@
             <p>Caso tenha alguma dúvida, não hesite em nos contactar. :)</p>
           </div>
 
-          <div class="row">
-            <div class="col-md-1 media scrollpoint sp-effect3"></div>
+          {% if CONNECTUS %}
+            <div class="row">
+              <div class="col-md-1 media scrollpoint sp-effect3"></div>
 
-            <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect3">
-
-              <center>
-                <div class="media">
-                  <div class="feature">
-                    <a href="https://www.google.com.br/maps/place/S%C3%A3o+Jos%C3%A9+dos+Campos,+SP/@-23.1894443,-46.0030986,11z/data=!3m1!4b1!4m2!3m1!1s0x94cc4bb3858cc2e7:0xba25a33168f8c1" >
-                      <i class="fa fa-map-marker fa-2x"></i>
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading">Vale do Paraíba - SP - Brasil</h4>
-                  </div>
-                </div>
-              </center>
-
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-2 media scrollpoint sp-effect3">
-
-              <center>
-                <div class="media">
-                  <a href="mailto:vale@pyladies.com"><i class="fa fa-envelope fa-2x"></i></a>
-                  <div class="media-body">
-                    <h4 class="media-heading">vale@pyladies.com</h4>
-                  </div>
-                </div>
-              </center>
-
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect3">
-
-              <center>
-                <div class="media">
-                  <a href="https://github.com/pyladiesvale"><i class="fa fa-github fa-2x"></i></a>
-                  <div class="media-body">
-                    <h4 class="media-heading">pyladiesvale</h4>
-                  </div>
-                </div>
-              </center>
-
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-2 media scrollpoint sp-effect3">
-
-              <center>
-                <div class="media">
-                  <a href="https://twitter.com/pyladiesvale" >
-                    <i class="fa fa-twitter fa-2x"></i>
-                  </a>
-                  <div class="media-body">
-                    <h4 class="media-heading">@pyladiesvale</h4>
-                  </div>
-                </div>
-              </center>
-
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect3">
-
-              <center>
-                <div class="media">
-                  <a href="https://www.facebook.com/pyladiesvale" >
-                    <i class="fa fa-facebook fa-2x"></i>
-                  </a>
-                  <div class="media-body">
-                    <h4 class="media-heading">fb.me/pyladiesvale</h4>
-                  </div>
-                </div>
-              </center>
-
-            </div>
-
-            <div class="col-md-1 media scrollpoint sp-effect3"></div>
-            
-          </div>
-
-          <!--div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
-                  <p>
-                    odksodkoaskdkaosdkaos chohendch aefshfiuhsdbsabdfjkabsfohofiofaf  jJOSJPADA DJOAODJOSDHAISIHS DI SDIHSAIDHhsoihdo idsh siadoiadias ddjoasjdoajd djoaijdiosjdjas isjosdjsisjdis sdijisj
-                  </p>
-                  <p>
-                    odksodkoaskdkaosdkaos chohendch aefshfiuhsdbsabdfjkabsfohofiofaf  jJOSJPADA DJOAODJOSDHAISIHS DI SDIHSAIDHhsoihdo idsh siadoiadias ddjoasjdoajd djoaijdiosjdjas isjosdjsisjdis sdijisjodksodkoaskdkaosdkaos chohendch aefshfiuhsdbsabdfjkabsfohofiofaf  jJOSJPADA DJOAODJOSDHAISIHS DI SDIHSAIDHhsoihdo idsh siadoiadias ddjoasjdoajd djoaijdiosjdjas isjosdjsisjdis sdijisj
-                  </p>
-                </div>
-
-                <div class="col-md-4 col-sm-4 contact-details scrollpoint sp-effect2">
-                  
-                  <div class="media">
-                    <a class="pull-left" href="https://www.google.com.br/maps/place/S%C3%A3o+Jos%C3%A9+dos+Campos,+SP/@-23.1894443,-46.0030986,11z/data=!3m1!4b1!4m2!3m1!1s0x94cc4bb3858cc2e7:0xba25a33168f8c1" >
-                      <i class="fa fa-map-marker fa-2x"></i>
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">Vale do Paraíba - SP - Brasil</h4>
+              {% for socialnetwork in CONNECTUS %}      
+                <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect3">
+                  <center>
+                    <div class="media">
+                      <a href="{{ socialnetwork.link }}" >
+                        <i class="{{ socialnetwork.icon }}"></i>
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">{{ socialnetwork.description }}</h4>
+                      </div>
                     </div>
-                  </div>
-
-                  <div class="media">
-                    <a class="pull-left" >
-                      <i class="fa fa-envelope fa-2x"></i>
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">
-                        <a href="mailto:vale@pyladies.com">vale@pyladies.com</a>
-                      </h4>
-                    </div>
-                  </div>
-
-                  <div class="media">
-                    <a class="pull-left" href="https://github.com/pyladiesvale" >
-                      <i class="fa fa-github fa-2x"></i>
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">pyladiesvale</h4>
-                    </div>
-                  </div>
-
-                  <div class="media">
-                    <a class="pull-left" href="https://twitter.com/pyladiesvale" >
-                      <i class="fa fa-twitter fa-2x"></i>
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">@pyladiesvale</h4>
-                    </div>
-                  </div>
-
-                  <div class="media">
-                    <a class="pull-left" href="https://www.facebook.com/pyladiesvale" >
-                      <i class="fa fa-facebook fa-2x"></i>
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">fb.me/pyladiesvale</h4>
-                    </div>
-                  </div>
-
+                  </center>
                 </div>
+              {% endfor %}
 
-              </div>
+              <div class="col-md-1 media scrollpoint sp-effect3"></div>              
             </div>
-          </div-->
+          {% else %}
 
+            Sem redes...
 
+          {% endif %}
 
-        </div>
-
+        </div> <!-- class="container" -->
       </section>
 
       <footer>
@@ -500,8 +379,8 @@
             <img src="{% static "core/img/logos/pyladies/logopyladies72x72.png" %}" alt="" class="logo">
           </a>
           <div class="rights">
-            <p>Copyright &copy; 2016</p>
-            <p>Todos os direitos reservados</a></p>
+            <p> Copyright &copy; 2016 </p>
+            <p> Todos os direitos reservados </a></p>
           </div>
         </div>
       </footer>
