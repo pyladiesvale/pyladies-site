@@ -95,12 +95,23 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">PyLadies</a></li>
-              <li><a href="#valeparaiba">Vale do Paraíba</a></li>
-              <li><a href="#pyladiesvale">PyLadies Vale</a></li>
+
+              {% if SECTIONS %}
+                {% for section in SECTIONS.first %}    
+                  <li><a href="#{{ section.id }}">{{ section.title }}</a></li>
+                {% endfor %}
+              {% endif %}
+
               <li><a href="#members">Membros</a></li>
-              <li><a href="#events">Eventos</a></li>
+
+              {% if SECTIONS %}
+                {% for section in SECTIONS.second %}    
+                  <li><a href="#{{ section.id }}">{{ section.title }}</a></li>
+                {% endfor %}
+              {% endif %}
+
               <li><a href="#support">Contato</a></li>
+            
             </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -219,53 +230,31 @@
     </header>
 
     <div class="wrapper">
-
-      <section id="about">
-        <div class="container">
-
-          <div class="section-heading scrollpoint sp-effect3">
-            <h1>PyLadies</h1>
-            <div class="divider"></div>
-            <p>
-              O PyLadies é um....
-              aksoskdoskodksodkoaskdkaosdkaos chohendch aefshfiuhsdbsabdfjkabsfohofiofaf  jJOSJPADA DJOAODJOSDHAISIHS DI SDIHSAIDHhsoihdo idsh siadoiadias ddjoasjdoajd djoaijdiosjdjas isjosdjsisjdis sdijisj
-            </p>
-            <p>
-              O PyLadies é um....
-              aksoskdoskodksodkoaskdkaosdkaos chohendch aefshfiuhsdbsabdfjkabsfohofiofaf  jJOSJPADA DJOAODJOSDHAISIHS DI SDIHSAIDHhsoihdo idsh siadoiadias ddjoasjdoajd djoaijdiosjdjas isjosdjsisjdis sdijisj
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="valeparaiba">
-        <div class="container">
-          <div class="section-heading scrollpoint sp-effect3">
-            <h1>Vale do Paraíba</h1>
-            <div class="divider"></div>
-            <p>
-              O Vale do Paraíba. odksodkoaskdkaosdkaos chohendch aefshfiuhsdbsabdfjkabsfohofiofaf  jJOSJPADA DJOAODJOSDHAISIHS DI SDIHSAIDHhsoihdo idsh siadoiadias ddjoasjdoajd djoaijdiosjdjas isjosdjsisjdis sdijisj
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="pyladiesvale">
-        <div class="container">
-          <div class="section-heading scrollpoint sp-effect3">
-            <h1>PyLadies Vale</h1>
-            <div class="divider"></div>
-            <p>
-              O Pyl odksodkoaskdkaosdkaos chohendch aefshfiuhsdbsabdfjkabsfohofiofaf  jJOSJPADA DJOAODJOSDHAISIHS DI SDIHSAIDHhsoihdo idsh siadoiadias ddjoasjdoajd djoaijdiosjdjas isjosdjsisjdis sdijisj            </p>
-          </div>
-        </div>
-      </section>
+      
+      {% if SECTIONS %}
+        {% for section in SECTIONS.first %}  
+          <section id="{{ section.id }}">
+            <div class="container">
+              <div class="section-heading scrollpoint sp-effect3">
+                <h1>{{ section.title }}</h1>
+                <div class="divider"></div>
+                {% for paragraph in section.body  %}  
+                  <p>
+                    {{ paragraph }}
+                  </p>
+                {% endfor %}
+              </div>
+            </div>
+          </section>
+        {% endfor %}
+      {% else %}
+        Sem seções...
+      {% endif %}
 
       <section id="members">
         <div class="container">
-
           <div class="section-heading scrollpoint sp-effect3" style="margin-bottom: 0px;">
+
             <h1>Membros</h1>
             <div class="divider"></div>
             <p>
@@ -277,7 +266,6 @@
             {% for list_members in MEMBERS %}  
               <div class="row">                
                 <div class="col-md-2 media scrollpoint sp-effect3"></div>
-
                   {% for member in list_members %}
                     <div class="col-xs-12 col-sm-3 col-md-2 media scrollpoint sp-effect3" id="member0">
                       <center>
@@ -310,30 +298,34 @@
                       </div>
                     </div>
                   {% endfor %}
-
                 <div class="col-md-2 media scrollpoint sp-effect3"></div>
               </div>
-
             {% endfor %}
-
-          {% else %}
-          
+          {% else %}          
             Sem membros...
-
           {% endif %}
-
         </div> <!-- class="container" -->
       </section>
 
-      <section id="events">
-        <div class="container">
-          <div class="section-heading scrollpoint sp-effect3">
-            <h1>Eventos</h1>
-            <div class="divider"></div>
-            <p>Em construção...</p>
-          </div>
-        </div>
-      </section>
+      {% if SECTIONS %}
+        {% for section in SECTIONS.second %}  
+          <section id="{{ section.id }}">
+            <div class="container">
+              <div class="section-heading scrollpoint sp-effect3">
+                <h1>{{ section.title }}</h1>
+                <div class="divider"></div>
+                {% for paragraph in section.body  %}  
+                  <p>
+                    {{ paragraph }}
+                  </p>
+                {% endfor %}
+              </div>
+            </div>
+          </section>
+        {% endfor %}
+      {% else %}
+        Sem seções...
+      {% endif %}
 
       <section id="support" class="doublediagonal">
         <div class="container">
@@ -342,11 +334,9 @@
             <div class="divider"></div>
             <p>Caso tenha alguma dúvida, não hesite em nos contactar. :)</p>
           </div>
-
           {% if CONNECTUS %}
             <div class="row">
               <div class="col-md-1 media scrollpoint sp-effect3"></div>
-
               {% for socialnetwork in CONNECTUS %}      
                 <div class="col-xs-12 col-sm-2 col-md-2 media scrollpoint sp-effect3">
                   <center>
@@ -361,13 +351,10 @@
                   </center>
                 </div>
               {% endfor %}
-
               <div class="col-md-1 media scrollpoint sp-effect3"></div>              
             </div>
           {% else %}
-
             Sem redes...
-
           {% endif %}
 
         </div> <!-- class="container" -->

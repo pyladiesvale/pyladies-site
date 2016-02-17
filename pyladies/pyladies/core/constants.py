@@ -45,3 +45,25 @@ CONNECTUS = [
 		"icon": "fa fa-facebook fa-2x", 
 		"description": "fb.me/pyladiesvale"}
 ]
+
+
+SECTIONS = {
+	"first": 
+		[
+			{"id": "about", "title": "PyLadies", 
+				"body": ["Em construção..."]
+			},
+			{"id": "valeparaiba", "title": "Vale do Paraíba", 
+				"body": ["Em construção..."]
+			},
+			{"id": "pyladiesvale", "title": "PyLadies Vale", 
+				"body": ["Em construção..."]
+			}
+		],
+	"second": 
+		[
+			{"id": "events", "title": "Eventos", 
+				"body": ["Em construção..."]
+			}
+		]
+}
