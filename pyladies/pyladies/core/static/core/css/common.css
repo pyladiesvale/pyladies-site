@@ -2,6 +2,10 @@
     margin-top: 15px !important;
 }
 
+/* cor do navbar fixa */
+header .navbar-default.scrolled {
+  background: rgb(255, 255, 255);
+}
 
 
 /* id_color section */
