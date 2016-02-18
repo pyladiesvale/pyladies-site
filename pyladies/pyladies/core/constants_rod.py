@@ -47,6 +47,27 @@ CONNECTUS = [
 ]
 
 
+# SECTIONS = {
+# 	"first": 
+# 		[
+# 			{"id": "about", "title": "PyLadies", 
+# 				"body": ["Em construção..."]
+# 			},
+# 			{"id": "valeparaiba", "title": "Vale do Paraíba", 
+# 				"body": ["Em construção..."]
+# 			},
+# 			{"id": "pyladiesvale", "title": "PyLadies Vale", 
+# 				"body": ["Em construção..."]
+# 			}
+# 		],
+# 	"second": 
+# 		[
+# 			{"id": "events", "title": "Eventos", 
+# 				"body": ["Em construção..."]
+# 			}
+# 		]
+# }
+
 SECTIONS = {
 	"first": 
 		[
@@ -63,7 +84,7 @@ SECTIONS = {
 	"second": 
 		[
 			{"id": "events", "title": "Eventos", 
-				"body": ["Nosso primeiro evento ocorrerá no dia 09/04/16 das 10h às 17h no CEDEMP em São José dos Campos. Confira nossa agenda: "]
+				"body": ["Nosso primeiro evento ocorrerá no dia 09/04/16 das 10h ás 17h no CEDEMP em São José dos Campos. Confira nossa agenda: "]
 			}
 		]
 }

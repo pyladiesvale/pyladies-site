@@ -457,7 +457,7 @@ footer {
   text-align: center;
 }
 footer a > img {
-  width: 120px;
+  width: 100px;
 }
 footer .social {
   display: block;
@@ -771,6 +771,9 @@ header .navbar-default.scrolled ul.navbar-nav li a:hover {
   color: #4a0808;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover:after {
+  background: #4a0808;
+}
+header .navbar-default.scrolled .navbar-brand {
   background: #4a0808;
 }
 section .section-heading .divider:after {
