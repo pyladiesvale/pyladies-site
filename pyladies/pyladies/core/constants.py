@@ -1,3 +1,24 @@
+SECTIONS = {
+	"first": 
+		[
+			{"id": "about", "title": "PyLadies", 
+				"body": ["O PyLadies é uma comunidade mundial que foi trazida ao Brasil com o propósito de instigar mais mulheres a entrarem na área tecnológica. Sua missão é educar e promover uma comunidade diversificada através da sensibilização, educação, conferência, eventos e reuniões sociais."]
+			},
+			{"id": "valeparaiba", "title": "Vale do Paraíba", 
+				"body": ["Em construção..."]
+			},
+			{"id": "pyladiesvale", "title": "PyLadies Vale", 
+				"body": ["Em construção..."]
+			}
+		],
+	"second": 
+		[
+			{"id": "events", "title": "Eventos", 
+				"body": ["Nosso primeiro evento ocorrerá no dia 09/04/16 das 10h às 17h no CEDEMP em São José dos Campos. Confira nossa agenda: "]
+			}
+		]
+}
+
 MEMBERS = [
 	[
 		{"nome": "Caroline", "status": "Estudante", "foto": "core/img/members/nobody.png",
@@ -13,7 +34,7 @@ MEMBERS = [
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		}				
 	],[
-		{"nome": "Jéssica", "status": "Estudante", "foto": "core/img/members/nobody.png",
+		{"nome": "Jéssica", "status": "Estudante", "foto": "core/img/members/jessica.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		},
 		{"nome": "Priscila", "status": "Estudante", "foto": "core/img/members/nobody.png",
@@ -22,7 +43,7 @@ MEMBERS = [
 		{"nome": "Rodrigo", "status": "Estudante", "foto": "core/img/members/nobody.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		},
-		{"nome": "Verônica", "status": "Estudante", "foto": "core/img/members/nobody.png",
+		{"nome": "Verônica", "status": "Estudante", "foto": "core/img/members/veronica.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		}		
 	]
@@ -45,25 +66,3 @@ CONNECTUS = [
 		"icon": "fa fa-facebook fa-2x", 
 		"description": "fb.me/pyladiesvale"}
 ]
-
-
-SECTIONS = {
-	"first": 
-		[
-			{"id": "about", "title": "PyLadies", 
-				"body": ["O PyLadies é uma comunidade mundial que foi trazida ao Brasil com o propósito de instigar mais mulheres a entrarem na área tecnológica. Sua missão é educar e promover uma comunidade diversificada através da sensibilização, educação, conferência, eventos e reuniões sociais."]
-			},
-			{"id": "valeparaiba", "title": "Vale do Paraíba", 
-				"body": ["Em construção..."]
-			},
-			{"id": "pyladiesvale", "title": "PyLadies Vale", 
-				"body": ["Em construção..."]
-			}
-		],
-	"second": 
-		[
-			{"id": "events", "title": "Eventos", 
-				"body": ["Nosso primeiro evento ocorrerá no dia 09/04/16 das 10h às 17h no CEDEMP em São José dos Campos. Confira nossa agenda: "]
-			}
-		]
-}
