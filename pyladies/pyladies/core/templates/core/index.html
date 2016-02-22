@@ -255,6 +255,11 @@
                     {{ paragraph }}
                   </p>
                 {% endfor %}
+                {% for paragraph in section.body_scape  %}  
+                  <p>
+                  {% autoescape off %} {{ paragraph }} {% endautoescape %}
+                  </p>
+                {% endfor %}
               </div>
             </div>
           </section>
@@ -329,6 +334,11 @@
                 {% for paragraph in section.body  %}  
                   <p>
                     {{ paragraph }}
+                  </p>
+                {% endfor %}
+                {% for paragraph in section.body_scape  %}  
+                  <p>
+                  {% autoescape off %} {{ paragraph }} {% endautoescape %}
                   </p>
                 {% endfor %}
               </div>
