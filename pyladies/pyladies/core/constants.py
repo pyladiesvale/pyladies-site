@@ -1,3 +1,31 @@
+CRONOGRAMA = '''
+Cronograma <br/>
+
+Sábado, 9 de abril de 2016 - Palestras <br/>
+
+10:00 - Café da manhã
+
+11:00 - Palestra com pessoas muito legais <3
+
+11:40 - Keynote com alguém importante
+
+12:30 - Almoço
+
+14:00 - Mais palestras com pessoas legais *_*
+
+14:40 - Keynote com mais alguém importante
+
+15:30 - Coffee Break
+
+16:30 - Sorteios
+
+17:00 - Encerramento
+'''
+
+'''
+{% autoescape off %}{{ myhtml }}{% endautoescape %}
+'''
+
 SECTIONS = {
 	"first": 
 		[
@@ -14,7 +42,7 @@ SECTIONS = {
 	"second": 
 		[
 			{"id": "events", "title": "Eventos", 
-				"body": ["Nosso primeiro evento ocorrerá no dia 09/04/16 das 10h às 17h no CEDEMP em São José dos Campos. Confira nossa agenda: "]
+				"body": ["Nosso primeiro evento ocorrerá no dia 09/04/16 das 10h às 17h no CEDEMP em São José dos Campos. Confira nossa agenda: ", CRONOGRAMA]
 			}
 		]
 }
