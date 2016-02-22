@@ -1,25 +1,27 @@
 CRONOGRAMA = '''
-		Cronograma <br/>
+		
+			Cronograma <br/>
 
-		Sábado, 9 de abril de 2016 - Palestras <br/>
+			Sábado, 9 de abril de 2016 - Palestras <br/>
 
-		10:00 - Café da manhã <br/>
+			10:00 - Café da manhã <br/>
 
-		11:00 - Palestra com pessoas muito legais <3 <br/>
+			11:00 - Palestra com pessoas muito legais <3 <br/>
 
-		11:40 - Keynote com alguém importante <br/>
+			11:40 - Keynote com alguém importante <br/>
 
-		12:30 - Almoço <br/>
+			12:30 - Almoço <br/>
 
-		14:00 - Mais palestras com pessoas legais *_* <br/>
+			14:00 - Mais palestras com pessoas legais *_* <br/>
 
-		14:40 - Keynote com mais alguém importante <br/>
+			14:40 - Keynote com mais alguém importante <br/>
 
-		15:30 - Coffee Break <br/>
+			15:30 - Coffee Break <br/>
 
-		16:30 - Sorteios <br/>
+			16:30 - Sorteios <br/>
 
-		17:00 - Encerramento <br/>
+			17:00 - Encerramento <br/>
+		
 	'''
 
 SECTIONS = {
