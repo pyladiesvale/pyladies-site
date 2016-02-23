@@ -51,26 +51,26 @@ SECTIONS = {
 
 MEMBERS = [
 	[
-		{"nome": "Caroline", "status": "Estudante", "foto": "core/img/members/nobody.png",
+		{"nome": "Caroline", "status": "Estudante", "foto": "core/img/members/caroline.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		},
-		{"nome": "Dally", "status": "Estudante", "foto": "core/img/members/nobody.png",
+		{"nome": "Dally", "status": "Estudante", "foto": "core/img/members/dally.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		},
-		{"nome": "Ingrid", "status": "Estudante", "foto": "core/img/members/nobody.png",
+		{"nome": "Ingrid", "status": "Estudante", "foto": "core/img/members/ingrid.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		},
-		{"nome": "Izabela", "status": "Estudante", "foto": "core/img/members/nobody.png",
+		{"nome": "Izabela", "status": "Estudante", "foto": "core/img/members/izabela.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		}				
 	],[
 		{"nome": "Jéssica", "status": "Estudante", "foto": "core/img/members/jessica.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		},
-		{"nome": "Priscila", "status": "Estudante", "foto": "core/img/members/nobody.png",
+		{"nome": "Priscila", "status": "Estudante", "foto": "core/img/members/priscila.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		},
-		{"nome": "Rodrigo", "status": "Estudante", "foto": "core/img/members/nobody.png",
+		{"nome": "Rodrigo", "status": "Estudante", "foto": "core/img/members/rodrigo.png",
 			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
 		},
 		{"nome": "Verônica", "status": "Estudante", "foto": "core/img/members/veronica.png",
