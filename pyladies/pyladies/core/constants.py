@@ -57,29 +57,45 @@ SECTIONS = {
 MEMBERS = [
 	[
 		{"nome": "Caroline", "status": "Estudante", "foto": "core/img/members/caroline.png",
-			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
+			"socialnetworks": {"facebook": "https://www.facebook.com/karoly.chan", 
+								"twitter": "https://twitter.com/Karoly_chan", 
+								"github": "https://github.com/karolychan"}
 		},
 		{"nome": "Dally", "status": "Estudante", "foto": "core/img/members/dally.png",
-			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
+			"socialnetworks": {"facebook": "...", 
+								"twitter": "...", 
+								"github": "..."}
 		},
 		{"nome": "Ingrid", "status": "Estudante", "foto": "core/img/members/ingrid.png",
-			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
+			"socialnetworks": {"facebook": "https://www.facebook.com/senaingrid", 
+								"twitter": "https://twitter.com/ingridsena", 
+								"github": "https://github.com/senaingrid"}
 		},
 		{"nome": "Izabela", "status": "Estudante", "foto": "core/img/members/izabela.png",
-			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
+			"socialnetworks": {"facebook": "https://www.facebook.com/izabela.dossantosguerreiro", 
+								"twitter": "https://twitter.com/izaguerreiro", 
+								"github": "https://github.com/izaguerreiro"}
 		}				
 	],[
 		{"nome": "Jéssica", "status": "Estudante", "foto": "core/img/members/jessica.png",
-			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
+			"socialnetworks": {"facebook": "...", 
+								"twitter": "...", 
+								"github": "..."}
 		},
 		{"nome": "Priscila", "status": "Estudante", "foto": "core/img/members/priscila.png",
-			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
+			"socialnetworks": {"facebook": "https://www.facebook.com/priscilaharaujo", 
+								"twitter": "...", 
+								"github": "https://github.com/priscilaaraujo92"}
 		},
 		{"nome": "Rodrigo", "status": "Estudante", "foto": "core/img/members/rodrigo.png",
-			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
+			"socialnetworks": {"facebook": "...", 
+								"twitter": "https://twitter.com/rmmariano0", 
+								"github": "https://github.com/rmmariano"}
 		},
 		{"nome": "Verônica", "status": "Estudante", "foto": "core/img/members/veronica.png",
-			"socialnetworks": {"facebook": "...", "twitter": "...", "github": "..."}
+			"socialnetworks": {"facebook": "https://www.facebook.com/veronicka.ve", 
+								"twitter": "https://twitter.com/Veronicka_Moon", 
+								"github": "https://github.com/veronicka"}
 		}		
 	]
 ]
