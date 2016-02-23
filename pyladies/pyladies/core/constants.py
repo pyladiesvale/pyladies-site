@@ -37,7 +37,7 @@ SECTIONS = {
 				"body_scape": [""]
 			},
 			{"id": "valeparaiba", "title": "Vale do Paraíba", 
-				"body": ["Em construção..."],
+				"body": ["O Vale do Paraíba é uma região sócio-econômica que abrange o leste do estado de São Paulo e o oeste do estado do Rio de Janeiro, que se destaca por concentrar uma parcela considerável do P.I.B do Brasil. A partir da década de 1950, a região industrializou-se rapidamente, nesta época destaca-se a criação do Instituto Tecnológico da Aeronáutica, a consequente instalação da indústria aeronáutica com a criação da Embraer em São José dos Campos e a fábrica veicular Volkswagen e eletrônicos LG, ambas na cidade de Taubaté. Com isso, a demanda por conhecimento tecnológico aumentou exponencialmente, contudo a participação feminina no meio tecnológico sempre foi baixa."],
 				"body_scape": [""]
 			},
 			{"id": "pyladiesvale", "title": "PyLadies Vale", 
