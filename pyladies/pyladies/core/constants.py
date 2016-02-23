@@ -1,27 +1,32 @@
-CRONOGRAMA = '''
-		
-			Cronograma <br/>
+CRONOGRAMA = '''		
+<div>
+		<p style="color: #000000; font-size: 30px; font-weight: 500;"> 
+			Cronograma 
+		</p>
 
-			Sábado, 9 de abril de 2016 - Palestras <br/>
+		<div class="body-cronograma">
+			<p> Sábado, 9 de abril de 2016 - Palestras </p>
 
-			10:00 - Café da manhã <br/>
+			<p> 10:00 - Café da manhã </p>
 
-			11:00 - Palestra com pessoas muito legais <3 <br/>
+			<p> 11:00 - Palestra com pessoas muito legais <3 </p>
 
-			11:40 - Keynote com alguém importante <br/>
+			<p> 11:40 - Keynote com alguém importante </p>
 
-			12:30 - Almoço <br/>
+			<p> 12:30 - Almoço </p>
 
-			14:00 - Mais palestras com pessoas legais *_* <br/>
+			<p> 14:00 - Mais palestras com pessoas legais *_* </p>
 
-			14:40 - Keynote com mais alguém importante <br/>
+			<p> 14:40 - Keynote com mais alguém importante </p>
 
-			15:30 - Coffee Break <br/>
+			<p> 15:30 - Coffee Break </p>
 
-			16:30 - Sorteios <br/>
+			<p> 16:30 - Sorteios </p>
 
-			17:00 - Encerramento <br/>
-		
+			<p> 17:00 - Encerramento </p>
+		</div>		
+
+		</div>
 	'''
 
 SECTIONS = {
