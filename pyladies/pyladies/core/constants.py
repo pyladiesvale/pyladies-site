@@ -41,7 +41,7 @@ SECTIONS = {
 				"body_scape": [""]
 			},
 			{"id": "pyladiesvale", "title": "PyLadies Vale", 
-				"body": ["Em construção..."],
+				"body": ["A ideia do PyLadies Vale ocorreu logo após o Python Vale 2015, mas só começou a ser organizado depois do Django Girls SJC, que ocorreu dentro do circuito Python Brasil 2015. Essa comunidade surgiu com o intuito de suprir a necessidade de uma comunidade feminina que consiga ajudar e orientar pessoas a entrarem ou permanecerem na área tecnológica."],
 				"body_scape": [""]
 			}
 		],
