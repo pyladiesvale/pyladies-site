@@ -22,8 +22,9 @@ __CRONOGRAMA__ = '''
 __COD_CONDUTA__ = 	'''
 		<div style="font-size: 25px; color: #999999; font-weight: 300;">
 			<a style="color: #CA0000;" href="https://github.com/pythonbrasil/codigo-de-conduta">
-			 Ou clique aqui :D
+				Clique aqui 
 			</a>
+				para acessar o Código de Conduta utilizado por nós. :D
 		</div>
 	'''
 
@@ -49,8 +50,8 @@ SECTIONS = {
 				"body": ["Nosso primeiro evento ocorrerá no dia 09/04/16 das 10h às 17h no CEDEMP em São José dos Campos. Confira nossa agenda: "],
 				"body_scape": [__CRONOGRAMA__]
 			},
-			{"id": "codcond", "title": "Código de conduta", 
-				"body": ["Link: https://github.com/pythonbrasil/codigo-de-conduta"],
+			{"id": "codcond", "title": "Código de Conduta", 
+				"body": [""],
 				"body_scape": [__COD_CONDUTA__]
 			}
 		]
