@@ -1,31 +1,29 @@
-CRONOGRAMA = '''		
+__CRONOGRAMA__ = '''		
 		<div>
 			<br/>
 			<p style="color: #000000; font-size: 30px; font-weight: 500;"> 
 				Cronograma 
 			</p>
-
 			<div class="body-cronograma">
 				<p> Sábado, 9 de abril de 2016 - Palestras </p>
-
 				<p> 10:00 - Café da manhã </p>
-
 				<p> 11:00 - Palestra com pessoas muito legais <3 </p>
-
 				<p> 11:40 - Keynote com alguém importante </p>
-
 				<p> 12:30 - Almoço </p>
-
 				<p> 14:00 - Mais palestras com pessoas legais *_* </p>
-
 				<p> 14:40 - Keynote com mais alguém importante </p>
-
 				<p> 15:30 - Coffee Break </p>
-
 				<p> 16:30 - Sorteios </p>
-
 				<p> 17:00 - Encerramento </p>
 			</div>		
+		</div>
+	'''
+
+__COD_CONDUTA__ = 	'''
+		<div style="font-size: 25px; color: #999999; font-weight: 300;">
+			<a style="color: #CA0000;" href="https://github.com/pythonbrasil/codigo-de-conduta">
+			 Ou clique aqui :D
+			</a>
 		</div>
 	'''
 
@@ -49,7 +47,11 @@ SECTIONS = {
 		[
 			{"id": "events", "title": "Eventos", 
 				"body": ["Nosso primeiro evento ocorrerá no dia 09/04/16 das 10h às 17h no CEDEMP em São José dos Campos. Confira nossa agenda: "],
-				"body_scape": [CRONOGRAMA]
+				"body_scape": [__CRONOGRAMA__]
+			},
+			{"id": "codcond", "title": "Código de conduta", 
+				"body": ["Link: https://github.com/pythonbrasil/codigo-de-conduta"],
+				"body_scape": [__COD_CONDUTA__]
 			}
 		]
 }
