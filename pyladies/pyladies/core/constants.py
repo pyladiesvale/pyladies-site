@@ -1,7 +1,6 @@
-__CRONOGRAMA__ = '''		
-		<div>
-			<br/>
-			<p style="color: #000000; font-size: 30px; font-weight: 500;"> 
+__CRONOGRAMA__ = '''
+		<div style="margin-top: 25px;">
+			<p style="color: #000000; font-size: 35px; font-weight: 500;"> 
 				Cronograma 
 			</p>
 			<div class="body-cronograma">
@@ -19,8 +18,22 @@ __CRONOGRAMA__ = '''
 		</div>
 	'''
 
+__INSCRICAO__ = '''
+		<div class="pls-red-box">
+			<p class="pls-red-box-text"> 
+				As inscrições para as palestras já estão disponíveis. 
+			</p>
+			<p class="pls-red-box-text">
+				<a style="color: #CA0000;" href="http://www.eventbrite.com.br/o/pyladies-vale-9877563307">
+					Clique aqui 
+				</a>
+					para submeter uma palestra. <3
+			</p>
+		</div>
+	'''
+
 __COD_CONDUTA__ = 	'''
-		<div style="font-size: 25px; color: #999999; font-weight: 300;">
+		<div style="font-size: 25px; color: #999999; font-weight: 300; margin-top: 30px;">
 			<a style="color: #CA0000;" href="https://github.com/pythonbrasil/codigo-de-conduta">
 				Clique aqui 
 			</a>
@@ -48,7 +61,7 @@ SECTIONS = {
 		[
 			{"id": "events", "title": "Eventos", 
 				"body": ["Nosso primeiro evento ocorrerá no dia 09/04/16 das 10h às 17h no CEDEMP em São José dos Campos. Confira nossa agenda: "],
-				"body_scape": [__CRONOGRAMA__]
+				"body_scape": [__CRONOGRAMA__,__INSCRICAO__]
 			},
 			{"id": "codcond", "title": "Código de Conduta", 
 				"body": [""],

@@ -1,3 +1,26 @@
+.pls-red-box{
+    padding: 9px;
+    border-radius: 3px;
+    min-height: 20px;
+    /*padding: 19px;*/
+    margin-bottom: 20px;
+    background-color: #FFBDBD;
+    border: 1px solid #CA0000;
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin: 30px 0px 30px 0px;
+}
+
+.pls-red-box-text {
+  color: #000000 !important;
+  font-weight: 500 !important;
+}
+
+
+
+
+
+
 .media, .media .media {
     margin-top: 15px !important;
 }
@@ -9,7 +32,7 @@
 
 
 .body-cronograma p {
-    font-size: 20px;
+    font-size: 23px;
     color: #000000;
     font-weight: 300;
 }
