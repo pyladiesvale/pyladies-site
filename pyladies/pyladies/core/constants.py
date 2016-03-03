@@ -21,7 +21,7 @@ __CRONOGRAMA__ = '''
 __INSCRICAO__ = '''
 		<div class="pls-red-box">
 			<p class="pls-red-box-text"> 
-				As inscrições para já estão abertas. 
+				As inscrições para o evento já estão abertas. 
 			</p>
 			<p class="pls-red-box-text">
 				<a style="color: #CA0000;" href="https://www.eventbrite.com.br/e/1o-encontro-pyladies-vale-tickets-22499770419">
