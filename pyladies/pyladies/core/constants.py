@@ -87,7 +87,7 @@ MEMBERS = [
 								"twitter": "https://twitter.com/ingridsena", 
 								"github": "https://github.com/senaingrid"}
 		},
-		{"nome": "Izabela", "status": "Estudante", "foto": "core/img/members/izabela.png",
+		{"nome": "Izabela", "status": "Estudante", "foto": "core/img/members/izabela02.png",
 			"socialnetworks": {"facebook": "https://www.facebook.com/izabela.dossantosguerreiro", 
 								"twitter": "https://twitter.com/izaguerreiro", 
 								"github": "https://github.com/izaguerreiro"}
