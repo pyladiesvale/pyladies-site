@@ -116,6 +116,17 @@ MEMBERS = [
 	]
 ]
 
+PATROCINADORES = [
+		{"name": "FATEC SJC", "image": "core/img/logos/patrocinadores/fatecsjc.png", 
+			"link": "http://fatecsjc.edu.br/", "size_desktop":"col-md-3"},
+		{"name": "Toptal", "image": "core/img/logos/patrocinadores/toptal.png", 
+			"link": "https://www.toptal.com/", "size_desktop":"col-md-4"},
+		#{"name": "IBM", "image": "core/img/logos/patrocinadores/ibm.png", 
+			# "link": "http://www.ibm.com/br-pt/", "size_desktop":"col-md-3"},
+		{"name": "Sumire", "image": "core/img/logos/patrocinadores/sumire.png", 
+			"link": "http://www.perfumariasumire.com.br/", "size_desktop":"col-md-3"}
+	]
+
 CONNECTUS = [
 	{"link": "https://www.google.com.br/maps/place/S%C3%A3o+Jos%C3%A9+dos+Campos,+SP/@-23.1894443,-46.0030986,11z/data=!3m1!4b1!4m2!3m1!1s0x94cc4bb3858cc2e7:0xba25a33168f8c1", 
 		"icon": "fa fa-map-marker fa-2x", 

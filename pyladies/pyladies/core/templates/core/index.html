@@ -122,6 +122,8 @@
                 {% endfor %}
               {% endif %}
 
+              <li><a href="#patrocinadores">Patrocinadores</a></li>
+
               <li><a href="#support">Contato</a></li>
             
             </ul>
@@ -344,6 +346,43 @@
       {% else %}
         Sem seções...
       {% endif %}
+
+      <section id="patrocinadores">
+        <div class="container">
+          <div class="section-heading sp-effect3" style="margin-bottom: 0px;">
+            <h1> Patrocinadores </h1>
+            <div class="divider"></div>
+            <p>
+              Nossos patrocinadores <3
+            </p>
+          </div>
+
+          {% if PATROCINADORES %}
+              <div class="row">                
+                <div class="col-md-1 media sp-effect3"></div>
+                  {% for patrocinador in PATROCINADORES %}
+                    <a href="{{ patrocinador.link }}">                    
+                      <div class="col-xs-12 col-sm-3 {{ patrocinador.size_desktop }} media sp-effect3" id="member0">
+                        <center>
+                          <div style="height: 150px;">
+                            <img src="{% static patrocinador.image %}" alt="" class="img-responsive" alt="Responsive image">
+                          </div>
+                        </center>
+                        <div class="feature">
+                          <center>
+                            <h3 class="media-heading"> {{ patrocinador.name }} </h3>
+                          </center>               
+                        </div>
+                      </div>
+                    </a>
+                  {% endfor %}
+                <div class="col-md-1 media sp-effect3"></div>
+              </div>
+          {% else %}          
+            Sem patrocinadores...
+          {% endif %}
+        </div> <!-- class="container" -->
+      </section>
 
       <section id="support" class="doublediagonal">
         <div class="container">
