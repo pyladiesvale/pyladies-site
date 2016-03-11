@@ -23,7 +23,6 @@
 function help_test(){
 	echo ""
 	echo "------------------ HELP ------------------"
-	echo ""
 	echo "--> Precisa inserir no mínimo 3 argumentos."
 	echo ""
 	echo "--> Primeiro argumento: mensagem do commit"
