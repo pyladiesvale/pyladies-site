@@ -287,7 +287,15 @@
                     <div class="col-xs-12 col-sm-3 col-md-2 media sp-effect3" id="member0">
                       <center>
                         <div>
-                          <img src="{% static member.foto %}" alt="" class="img-responsive img-circle" alt="Responsive image">
+
+                        {% if member.link != "" %}
+                          <a href="{{ member.link }}" class="sp-effect3">
+                        {% endif %}
+                            <img src="{% static member.foto %}" alt="" class="img-responsive img-circle" alt="Responsive image">
+                        {% if member.link != "" %}
+                          </a>
+                        {% endif %}
+                        
                         </div>
                       </center>
                       <div class="feature">
