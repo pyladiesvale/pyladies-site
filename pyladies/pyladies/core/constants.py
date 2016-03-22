@@ -72,7 +72,7 @@ SECTIONS = {
 
 MEMBERS = [
 	[
-		{"nome": "Caroline", "status": "Estudante", "foto": "core/img/members/caroline.png",
+		{"nome": "Caroline", "status": "Estudante", "foto": "core/img/members/caroline02.png",
 			"socialnetworks": {"facebook": "https://www.facebook.com/karoly.chan", 
 								"twitter": "https://twitter.com/Karoly_chan", 
 								"github": "https://github.com/karolychan"}
@@ -117,13 +117,17 @@ MEMBERS = [
 ]
 
 PATROCINADORES = [
-		{"name": "FATEC SJC", "image": "core/img/logos/patrocinadores/fatecsjc.png", 
+		{	#"name": "FATEC SJC",
+			"image": "core/img/logos/patrocinadores/fatecsjc.png", 
 			"link": "http://fatecsjc.edu.br/", "size_desktop":"col-md-3"},
-		{"name": "Toptal", "image": "core/img/logos/patrocinadores/toptal.png", 
+		{	#"name": "Toptal", 
+			"image": "core/img/logos/patrocinadores/toptal.png", 
 			"link": "https://www.toptal.com/", "size_desktop":"col-md-4"},
-		#{"name": "IBM", "image": "core/img/logos/patrocinadores/ibm.png", 
+		#{	"name": "IBM",
+			# "image": "core/img/logos/patrocinadores/ibm.png", 
 			# "link": "http://www.ibm.com/br-pt/", "size_desktop":"col-md-3"},
-		{"name": "Sumire", "image": "core/img/logos/patrocinadores/sumire.png", 
+		{	#"name": "Sumire", 
+			"image": "core/img/logos/patrocinadores/sumire.png", 
 			"link": "http://www.perfumariasumire.com.br/", "size_desktop":"col-md-3"}
 	]
 
