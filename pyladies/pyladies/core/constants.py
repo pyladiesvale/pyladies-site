@@ -5,15 +5,19 @@ __CRONOGRAMA__ = '''
 			</p>
 			<div class="body-cronograma">
 				<p> Sábado, 9 de abril de 2016 - Palestras </p>
-				<p> 10:00 - Café da manhã </p>
-				<p> 11:00 - Palestra com pessoas muito legais <3 </p>
-				<p> 11:40 - Keynote com alguém importante </p>
+				<p> 10:00 às 10:20 – Café da manhã </p>
+				<p> 10:20 às 10:50 – PyLadies Vale </p>
+				<p> 10:50 às 11:40 – Keynote com Maite Balhester – ThoughtWorks </p>
+				<p> 11:40 às 12:10 – Matheus – Ai meus Nudes </p>
 				<p> 12:30 - Almoço </p>
-				<p> 14:00 - Mais palestras com pessoas legais *_* </p>
-				<p> 14:40 - Keynote com mais alguém importante </p>
-				<p> 15:30 - Coffee Break </p>
-				<p> 16:30 - Sorteios </p>
-				<p> 17:00 - Encerramento </p>
+				<p> 13:00 às 13:50 – Jacqueline – De Grace Hopper até 2016, o que aprendemos com as grandes mulheres na computação </p>
+				<p> 13:50 às 14:20 – Ana Claudia Nogueira – Programe a eficácia do seu código </p>
+				<p> 14:20 às 14:50 – Graziele - Mulheres e a Diversidade nas HQs: Um mercado ainda em evolução </p>
+				<p> 14:50 às 15:40 – Keynote com a Josemeire – IBM </p>
+				<p> 15:40 às 16:00 – Coffee Break </p>
+				<p> 16:00 às 16:30 – Renzo </p>
+				<p> 16:30 às 17:00 – Masanori </p>
+				<p> 17:00 – Encerramento </p>
 			</div>		
 		</div>
 	'''
