@@ -7,16 +7,16 @@ __CRONOGRAMA__ = '''
 				<p> Sábado, 9 de abril de 2016 - Palestras </p>
 				<p> 10:00 às 10:20 – Café da manhã </p>
 				<p> 10:20 às 10:50 – PyLadies Vale </p>
-				<p> 10:50 às 11:40 – Keynote com Maite Balhester – ThoughtWorks </p>
+				<p> 10:50 às 11:40 – Keynote – Maite Balhester – ThoughtWorks </p>
 				<p> 11:40 às 12:10 – Matheus – Ai meus Nudes </p>
 				<p> 12:30 - Almoço </p>
 				<p> 13:00 às 13:50 – Jacqueline – De Grace Hopper até 2016, o que aprendemos com as grandes mulheres na computação </p>
 				<p> 13:50 às 14:20 – Ana Claudia Nogueira – Programe a eficácia do seu código </p>
 				<p> 14:20 às 14:50 – Graziele - Mulheres e a Diversidade nas HQs: Um mercado ainda em evolução </p>
-				<p> 14:50 às 15:40 – Keynote com a Josemeire – IBM </p>
+				<p> 14:50 às 15:40 – Keynote – Josemeire – IBM </p>
 				<p> 15:40 às 16:00 – Coffee Break </p>
-				<p> 16:00 às 16:30 – Renzo </p>
-				<p> 16:30 às 17:00 – Masanori </p>
+				<p> 16:00 às 16:30 – Renzo Nuccitelli </p>
+				<p> 16:30 às 17:00 – Fernando Masanori – Diversidade na Comunidade Python </p>
 				<p> 17:00 – Encerramento </p>
 			</div>		
 		</div>
@@ -52,12 +52,9 @@ SECTIONS = {
 				"body": ["O PyLadies é uma comunidade mundial que foi trazida ao Brasil com o propósito de instigar mais mulheres a entrarem na área tecnológica. Sua missão é educar e promover uma comunidade diversificada através da sensibilização, educação, conferência, eventos e reuniões sociais."],
 				"body_scape": [""]
 			},
-			{"id": "valeparaiba", "title": "Vale do Paraíba", 
-				"body": ["O Vale do Paraíba é uma região sócio-econômica que abrange o leste do estado de São Paulo e o oeste do estado do Rio de Janeiro, que se destaca por concentrar uma parcela considerável do P.I.B do Brasil. A partir da década de 1950, a região industrializou-se rapidamente, nesta época destaca-se a criação do Instituto Tecnológico da Aeronáutica, a consequente instalação da indústria aeronáutica com a criação da Embraer em São José dos Campos e a fábrica veicular Volkswagen e eletrônicos LG, ambas na cidade de Taubaté. Com isso, a demanda por conhecimento tecnológico aumentou exponencialmente, contudo a participação feminina no meio tecnológico sempre foi baixa."],
-				"body_scape": [""]
-			},
 			{"id": "pyladiesvale", "title": "PyLadies Vale", 
-				"body": ["A ideia do PyLadies Vale ocorreu logo após o Python Vale 2015, mas só começou a ser organizado depois do Django Girls SJC, que ocorreu dentro do circuito Python Brasil 2015. Essa comunidade surgiu com o intuito de suprir a necessidade de uma comunidade feminina que consiga ajudar e orientar pessoas a entrarem ou permanecerem na área tecnológica."],
+				"body": ["O Vale do Paraíba é uma região sócio-econômica que abrange o leste do estado de São Paulo e o oeste do estado do Rio de Janeiro, que se destaca por concentrar uma parcela considerável do P.I.B do Brasil. A partir da década de 1950, a região industrializou-se rapidamente, nesta época destaca-se a criação do Instituto Tecnológico da Aeronáutica, a consequente instalação da indústria aeronáutica com a criação da Embraer em São José dos Campos e a fábrica veicular Volkswagen e eletrônicos LG, ambas na cidade de Taubaté. Com isso, a demanda por conhecimento tecnológico aumentou exponencialmente, contudo a participação feminina no meio tecnológico sempre foi baixa.",
+						"A ideia do PyLadies Vale ocorreu logo após o Python Vale 2015, mas só começou a ser organizado depois do Django Girls SJC, que ocorreu dentro do circuito Python Brasil 2015. Essa comunidade surgiu com o intuito de suprir a necessidade de uma comunidade feminina que consiga ajudar e orientar pessoas a entrarem ou permanecerem na área tecnológica."],
 				"body_scape": [""]
 			}
 		],
