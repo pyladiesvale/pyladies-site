@@ -143,19 +143,22 @@ MEMBERS = [
 PATROCINADORES = [
 		{	#"name": "FATEC SJC",
 			"image": "core/img/logos/patrocinadores/fatecsjc.png", 
-			"link": "http://fatecsjc.edu.br/", "size_desktop":"col-md-3"},
-		{	#"name": "IBM",
-			"image": "core/img/logos/patrocinadores/ibm.png", 
-			"link": "http://www.ibm.com/br-pt/", "size_desktop":"col-md-3"},
+			"link": "http://fatecsjc.edu.br/", "size_desktop":"col-md-2"},
+		{	#"name": "Bilac",
+			"image": "core/img/logos/patrocinadores/bilac.png", 
+			"link": "http://bilac.com.br/", "size_desktop":"col-md-2"},
 		# {	#"name": "ThoughtWorks",
 		# 	"image": "core/img/logos/patrocinadores/thoughtworks.png", 
-		# 	"link": "https://www.thoughtworks.com/pt/", "size_desktop":"col-md-3"},
+		# 	"link": "https://www.thoughtworks.com/pt/", "size_desktop":"col-md-2"},
 		{	#"name": "Toptal", 
 			"image": "core/img/logos/patrocinadores/toptal.png", 
-			"link": "https://www.toptal.com/", "size_desktop":"col-md-3"},
+			"link": "https://www.toptal.com/", "size_desktop":"col-md-4"},
+		{	#"name": "IBM",
+			"image": "core/img/logos/patrocinadores/ibm.png", 
+			"link": "http://www.ibm.com/br-pt/", "size_desktop":"col-md-2"},
 		{	#"name": "Sumire", 
 			"image": "core/img/logos/patrocinadores/sumire.png", 
-			"link": "http://www.perfumariasumire.com.br/", "size_desktop":"col-md-3"}
+			"link": "http://www.perfumariasumire.com.br/", "size_desktop":"col-md-2"}
 	]
 
 CONNECTUS = [
