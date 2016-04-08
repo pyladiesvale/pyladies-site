@@ -7,15 +7,15 @@ __CRONOGRAMA__ = '''
 				<p> Sábado, 9 de abril de 2016 – Palestras </p>
 				<p> 10:00 às 10:30 – Café da manhã </p>
 				<p> 10:30 às 11:10 – PyLadies Vale </p>
-				<p> 11:10 às 12:00 – Keynote com Maite Balhester –  Programar é para todos: Como é ser uma mulher em tecnologia – ThoughtWorks </p>
+				<p> 11:10 às 12:00 – Keynote com Maite Balhester – Programar é para todos: Como é ser uma mulher em tecnologia – ThoughtWorks </p>
 				<p> 12:00 às 12:30 – Graziele Galvão – Mulheres e a Diversidade nas HQs: Um mercado ainda em evolução – FATEC SJC </p>
 				<p> 12:30 às 13:30 – Almoço </p>
-				<p> 13:30 às 14:00 – Ana Claudia Nogueira – Programe a eficácia do seu código </p>
-				<p> 14:00 às 14:50 – Keynote com Jacqueline Abreu – De Grace Hopper até 2016, o que aprendemos com as grandes mulheres na computação </p>
-				<p> 14:50 às 15:40 – Keynote com Josemeire Aparecida Santos – IBM </p>
+				<p> 13:30 às 14:00 – Ana Claudia Nogueira – Programe a eficácia do seu código – Maia Cosméticos </p>
+				<p> 14:00 às 14:50 – Keynote com Jac Abreu Lopes – De Grace Hopper até 2016, o que aprendemos com as grandes mulheres na computação </p>
+				<p> 14:50 às 15:40 – Keynote com Josemeire Aparecida Santos – Mulheres em TI e linhas de carreira na Era Cognitiva – IBM </p>
 				<p> 15:40 às 16:00 – Coffee Break </p>
 				<p> 16:00 às 16:30 – Renzo Nuccitelli – Programando a Felicidade – FATEC SJC </p>
-				<p> 16:30 às 17:00 - Fernando Masanori – Diversidade na Comunidade Python – FATEC SJC </p>
+				<p> 16:30 às 17:00 – Fernando Masanori – Diversidade na Comunidade Python – FATEC SJC </p>
 				<p> 17:00 – Encerramento </p>
 			</div>
 		</div>
