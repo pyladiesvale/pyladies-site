@@ -118,14 +118,6 @@ MEMBERS = [
 								"twitter": "#", 
 								"github": "https://github.com/priscilaaraujo92"}
 		},
-		{"nome": "Rodrigo", "status": "Estudante", 
-			"description": "",
-			"link": "",
-			"foto": "core/img/members/rodrigo.png",
-			"socialnetworks": {"facebook": "#", 
-								"twitter": "https://twitter.com/rmmariano0", 
-								"github": "https://github.com/rmmariano"}
-		},
 		{"nome": "Verônica", "status": "Estudante", 
 			"description": "",
 			"link": "",
